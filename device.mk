@@ -16,6 +16,13 @@
 USE_OEM_TV_APP := true
 $(call inherit-product, device/google/atv/products/atv_base.mk)
 
+#OpenGAPPS
+GAPPS_VARIANT := pico
+PRODUCT_PACKAGES += PrebuiltGmail \
+	CalendarGooglePrebuilt \
+	PrebuiltExchange3Google \
+	GoogleContacts
+
 PRODUCT_DIR := $(dir $(lastword $(filter-out device/common/%,$(filter device/%,$(ALL_PRODUCTS)))))
 
 PRODUCT_PROPERTY_OVERRIDES := \
