@@ -4,8 +4,6 @@
 
 TARGET_BOARD_PLATFORM := android-x86
 
-ANDROID_COMPILE_WITH_JACK := false
-
 # Some framework code requires this to enable BT
 BOARD_HAVE_BLUETOOTH := true
 
