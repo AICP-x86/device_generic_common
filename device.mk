@@ -104,6 +104,9 @@ PRODUCT_AAPT_PREF_CONFIG := mdpi
 
 DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
 
+# Inherit some common AICP stuff.
+$(call inherit-product,vendor/aicp/configs/common_tablet.mk)
+
 # Get the firmwares
 $(call inherit-product,device/generic/firmware/firmware.mk)
 
