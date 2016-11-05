@@ -18,8 +18,16 @@
 GAPPS_VARIANT := pico
 PRODUCT_PACKAGES += PrebuiltGmail \
 	CalendarGooglePrebuilt \
+	GoogleCalendarSyncAdapter \
+	GoogleContacts \
+	GoogleContactsSyncAdapter \
+	GoogleLoginService \
+	GooglePackageInstaller \
+	GooglePartnerSetup \
+	GoogleServicesFramework \
+	Phonesky \
 	PrebuiltExchange3Google \
-	GoogleContacts
+	PrebuiltGmsCore \
 
 PRODUCT_DIR := $(dir $(lastword $(filter-out device/common/%,$(filter device/%,$(ALL_PRODUCTS)))))
 
